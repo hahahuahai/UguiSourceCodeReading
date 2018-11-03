@@ -14,6 +14,9 @@ namespace UnityEngine.UI
         MaxUpdateValue = 5
     }
 
+    /// <summary>
+    /// ICanvasElement提供了Canvas对其管理的元素的更新事件的接口
+    /// </summary>
     public interface ICanvasElement
     {
         void Rebuild(CanvasUpdate executing);
@@ -26,6 +29,9 @@ namespace UnityEngine.UI
         bool IsDestroyed();
     }
 
+    /// <summary>
+    /// Canvas对于UI组件的更新是由CanvasUpdateRegistry来管理的
+    /// </summary>
     public class CanvasUpdateRegistry
     {
         private static CanvasUpdateRegistry s_Instance;

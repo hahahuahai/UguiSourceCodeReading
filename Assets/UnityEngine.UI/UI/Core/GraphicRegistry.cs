@@ -4,7 +4,7 @@ using UnityEngine.UI.Collections;
 namespace UnityEngine.UI
 {
     /// <summary>
-    /// Registry which maps a Graphic to the canvas it belongs to.
+    /// Registry which maps a Graphic to the canvas it belongs to.单例类，用于保存Canvas和与其关联的Graphic。并可以通过其获取到某个Canvas关联的所有Graphic。在其内部每个Canvas对应的所有Graphic是通过一种名为IndexedSet的数据结构来保存的。
     /// </summary>
     public class GraphicRegistry
     {
