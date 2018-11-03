@@ -18,7 +18,7 @@ namespace UnityEngine.UI
     [ExecuteInEditMode]
     public abstract class Graphic
         : UIBehaviour,//UIBehaviour是所有UI组件的抽象基类，提供了接收UnityEngine或UnityEditor的事件的接口
-          ICanvasElement
+          ICanvasElement//只有实现了ICanvasElement接口的类才可以通过CanvasUpdateRegistry 注册更新事件
     {
         static protected Material s_DefaultUI = null;
         static protected Texture2D s_WhiteTexture = null;
@@ -104,7 +104,9 @@ namespace UnityEngine.UI
             if (m_OnDirtyLayoutCallback != null)
                 m_OnDirtyLayoutCallback();
         }
-
+        /// <summary>
+        /// Mark the vertices as dirty.
+        /// </summary>
         public virtual void SetVerticesDirty()
         {
             if (!IsActive())
@@ -116,7 +118,9 @@ namespace UnityEngine.UI
             if (m_OnDirtyVertsCallback != null)
                 m_OnDirtyVertsCallback();
         }
-
+        /// <summary>
+        /// Mark the Material as dirty.
+        /// </summary>
         public virtual void SetMaterialDirty()
         {
             if (!IsActive())
@@ -128,7 +132,9 @@ namespace UnityEngine.UI
             if (m_OnDirtyMaterialCallback != null)
                 m_OnDirtyMaterialCallback();
         }
-
+        /// <summary>
+        /// This callback is called if an associated RectTransform has its dimensions changed. The call is also made to all child rect transforms, even if the child transform itself doesn't change - as it could have, depending on its anchoring.
+        /// </summary>
         protected override void OnRectTransformDimensionsChange()
         {
             if (gameObject.activeInHierarchy)
@@ -143,13 +149,17 @@ namespace UnityEngine.UI
                 }
             }
         }
-
+        /// <summary>
+        /// See MonoBehaviour.OnBeforeTransformParentChanged.
+        /// </summary>
         protected override void OnBeforeTransformParentChanged()
         {
             GraphicRegistry.UnregisterGraphicForCanvas(canvas, this);
             LayoutRebuilder.MarkLayoutForRebuild(rectTransform);
         }
-
+        /// <summary>
+        /// See MonoBehaviour.OnRectTransformParentChanged.
+        /// </summary>
         protected override void OnTransformParentChanged()
         {
             base.OnTransformParentChanged();
@@ -314,7 +324,9 @@ namespace UnityEngine.UI
 
             base.OnDisable();
         }
-
+        /// <summary>
+        /// Called when the state of the parent Canvas is changed.When a parent canvas is either enabled, disabled or a nested canvas's OverrideSorting is changed this function is called. You can for example use this to modify objects below a canvas that may depend on a parent canvas - for example, if a canvas is disabled you may want to halt some processing of a UI element.
+        /// </summary>
         protected override void OnCanvasHierarchyChanged()
         {
             // Use m_Cavas so we dont auto call CacheCanvas
@@ -338,7 +350,10 @@ namespace UnityEngine.UI
                     GraphicRegistry.RegisterGraphicForCanvas(canvas, this);
             }
         }
-
+        /// <summary>
+        /// Rebuilds the graphic geometry and its material on the PreRender cycle.
+        /// </summary>
+        /// <param name="update"></param>
         public virtual void Rebuild(CanvasUpdate update)
         {
             if (canvasRenderer.cull)
@@ -360,10 +375,14 @@ namespace UnityEngine.UI
                     break;
             }
         }
-
+        /// <summary>
+        /// See ICanvasElement.LayoutComplete.
+        /// </summary>
         public virtual void LayoutComplete()
         {}
-
+        /// <summary>
+        /// See ICanvasElement.GraphicUpdateComplete.
+        /// </summary>
         public virtual void GraphicUpdateComplete()
         {}
 
@@ -481,6 +500,9 @@ namespace UnityEngine.UI
         }
 
 #if UNITY_EDITOR
+        /// <summary>
+        /// Editor-only callback that is issued by Unity if a rebuild of the Graphic is required.Currently sent when an asset is reimported.
+        /// </summary>
         public virtual void OnRebuildRequested()
         {
             // when rebuild is requested we need to rebuild all the graphics /
@@ -497,7 +519,9 @@ namespace UnityEngine.UI
                     methodInfo.Invoke(mb, null);
             }
         }
-
+        /// <summary>
+        /// See MonoBehaviour.Reset.
+        /// </summary>
         protected override void Reset()
         {
             SetAllDirty();
@@ -516,6 +540,12 @@ namespace UnityEngine.UI
         /// Make the Graphic have the native size of its content.
         /// </summary>
         public virtual void SetNativeSize() {}
+        /// <summary>
+        /// When a GraphicRaycaster is raycasting into the scene it does two things. First it filters the elements using their RectTransform rect. Then it uses this Raycast function to determine the elements hit by the raycast.
+        /// </summary>
+        /// <param name="sp"></param>
+        /// <param name="eventCamera"></param>
+        /// <returns></returns>
         public virtual bool Raycast(Vector2 sp, Camera eventCamera)
         {
             if (!isActiveAndEnabled)
@@ -572,6 +602,9 @@ namespace UnityEngine.UI
         }
 
 #if UNITY_EDITOR
+        /// <summary>
+        /// See MonoBehaviour.OnValidate.
+        /// </summary>
         protected override void OnValidate()
         {
             base.OnValidate();
@@ -579,7 +612,11 @@ namespace UnityEngine.UI
         }
 
 #endif
-
+        /// <summary>
+        /// Adjusts the given pixel to be pixel perfect.Note: This is only accurate if the Graphic root Canvas is in Screen Space.
+        /// </summary>
+        /// <param name="point"></param>
+        /// <returns></returns>
         public Vector2 PixelAdjustPoint(Vector2 point)
         {
             if (!canvas || canvas.renderMode == RenderMode.WorldSpace || canvas.scaleFactor == 0.0f || !canvas.pixelPerfect)
@@ -589,7 +626,10 @@ namespace UnityEngine.UI
                 return RectTransformUtility.PixelAdjustPoint(point, transform, canvas);
             }
         }
-
+        /// <summary>
+        /// Returns a pixel perfect Rect closest to the Graphic RectTransform.Note: This is only accurate if the Graphic root Canvas is in Screen Space.
+        /// </summary>
+        /// <returns></returns>
         public Rect GetPixelAdjustedRect()
         {
             if (!canvas || canvas.renderMode == RenderMode.WorldSpace || canvas.scaleFactor == 0.0f || !canvas.pixelPerfect)
@@ -597,12 +637,25 @@ namespace UnityEngine.UI
             else
                 return RectTransformUtility.PixelAdjustRect(rectTransform, canvas);
         }
-
+        /// <summary>
+        /// Tweens the CanvasRenderer color associated with this Graphic.
+        /// </summary>
+        /// <param name="targetColor"></param>
+        /// <param name="duration"></param>
+        /// <param name="ignoreTimeScale"></param>
+        /// <param name="useAlpha"></param>
         public virtual void CrossFadeColor(Color targetColor, float duration, bool ignoreTimeScale, bool useAlpha)
         {
             CrossFadeColor(targetColor, duration, ignoreTimeScale, useAlpha, true);
         }
-
+        /// <summary>
+        /// Tweens the CanvasRenderer color associated with this Graphic.
+        /// </summary>
+        /// <param name="targetColor"></param>
+        /// <param name="duration"></param>
+        /// <param name="ignoreTimeScale"></param>
+        /// <param name="useAlpha"></param>
+        /// <param name="useRGB"></param>
         public virtual void CrossFadeColor(Color targetColor, float duration, bool ignoreTimeScale, bool useAlpha, bool useRGB)
         {
             if (canvasRenderer == null || (!useRGB && !useAlpha))
@@ -642,32 +695,50 @@ namespace UnityEngine.UI
         {
             CrossFadeColor(CreateColorFromAlpha(alpha), duration, ignoreTimeScale, true, false);
         }
-
+        /// <summary>
+        /// Add a listener to receive notification when the graphics layout is dirtied.
+        /// </summary>
+        /// <param name="action"></param>
         public void RegisterDirtyLayoutCallback(UnityAction action)
         {
             m_OnDirtyLayoutCallback += action;
         }
-
+        /// <summary>
+        /// Remove a listener from receiving notifications when the graphics layout is dirtied.
+        /// </summary>
+        /// <param name="action"></param>
         public void UnregisterDirtyLayoutCallback(UnityAction action)
         {
             m_OnDirtyLayoutCallback -= action;
         }
-
+        /// <summary>
+        /// Add a listener to receive notification when the graphics vertices are dirtied.
+        /// </summary>
+        /// <param name="action"></param>
         public void RegisterDirtyVerticesCallback(UnityAction action)
         {
             m_OnDirtyVertsCallback += action;
         }
-
+        /// <summary>
+        /// Remove a listener from receiving notifications when the graphics vertices are dirtied.
+        /// </summary>
+        /// <param name="action"></param>
         public void UnregisterDirtyVerticesCallback(UnityAction action)
         {
             m_OnDirtyVertsCallback -= action;
         }
-
+        /// <summary>
+        /// Add a listener to receive notification when the graphics material is dirtied.
+        /// </summary>
+        /// <param name="action"></param>
         public void RegisterDirtyMaterialCallback(UnityAction action)
         {
             m_OnDirtyMaterialCallback += action;
         }
-
+        /// <summary>
+        /// Remove a listener from receiving notifications when the graphics material is dirtied.
+        /// </summary>
+        /// <param name="action"></param>
         public void UnregisterDirtyMaterialCallback(UnityAction action)
         {
             m_OnDirtyMaterialCallback -= action;
