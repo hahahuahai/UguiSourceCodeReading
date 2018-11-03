@@ -1,0 +1,824 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="UnityEngine.EventSystems.AxisEventData" Collapsed="true">
+    <Position X="0.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\EventData\AxisEventData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.EventSystems.AbstractEventData" Collapsed="true">
+    <Position X="1.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAEAAAAAAQAQAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\EventData\BaseEventData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.EventSystems.BaseEventData" Collapsed="true">
+    <Position X="1.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\EventData\BaseEventData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.EventSystems.PointerEventData" Collapsed="true">
+    <Position X="2.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAjAABAAAAgMAIBgIOEgAgIAAQIAAAAAAEAGgBQ=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\EventData\PointerEventData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.EventSystems.EventSystem" Collapsed="true">
+    <Position X="3.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQgAEQAAAAEBAAEUQQQCAIAwAAAARAMAQAACAAkGhI=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\EventSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.EventSystems.EventTrigger" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="66.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASAASAAAgIIAAQAAABIEAAAAAQgACQAAEAQAQAAIAQ=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\EventTrigger.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="UnityEngine.EventSystems.ExecuteEvents" Collapsed="true">
+    <Position X="68.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAkEAAWIAABFhEQjAUDgRAAAAgACAgADABCIgCkCEAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\ExecuteEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.EventSystems.BaseInput" Collapsed="true">
+    <Position X="39.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ggIAAhIAAAAABACAQAAAAQEAAAAAAAAAAAAAEAAQABA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\InputModules\BaseInput.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.EventSystems.BaseInputModule" Collapsed="true">
+    <Position X="56.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABRAwAAAYAAAAAAAAgAAUAigEggAABgIACAQAQAACAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\InputModules\BaseInputModule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.EventSystems.PointerInputModule" Collapsed="true">
+    <Position X="56.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAcAAAAAQAASAAAkAAgACIgAQAIAAAAAAAAgAAAIAwA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\InputModules\PointerInputModule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.EventSystems.StandaloneInputModule" Collapsed="true">
+    <Position X="55.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJAAcEAlEQQQABrQgoQgwAEAAggAAAgYACAAACgBAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.EventSystems.TouchInputModule" Collapsed="true">
+    <Position X="57.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJAACAAEAAAABAAEggAgwAAAAggAAAgAAAAAAAAAAAQ=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\InputModules\TouchInputModule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.EventSystems.RaycasterManager" Collapsed="true">
+    <Position X="68.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAIAAAAAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\RaycasterManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.EventSystems.BaseRaycaster" Collapsed="true">
+    <Position X="6.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAABAEAAQAAIAAAAAAAAAIAAAAAgAACAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\Raycasters\BaseRaycaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.EventSystems.Physics2DRaycaster" Collapsed="true">
+    <Position X="5.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\Raycasters\Physics2DRaycaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.EventSystems.PhysicsRaycaster" Collapsed="true">
+    <Position X="5.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABACCAAAFAAhAAEAAAAAEAAAAAAAABAIgBAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\Raycasters\PhysicsRaycaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.EventSystems.UIBehaviour" Collapsed="true">
+    <Position X="33.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEABAAAAACAABAAZEAEEAAAAAAAAAAAIAAACAAAACFA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\UIBehaviour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UI.CoroutineTween.TweenRunner&lt;T&gt;" Collapsed="true">
+    <Position X="66.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAgAEAAAAAgACAACAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Animation\CoroutineTween.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UI.AnimationTriggers" Collapsed="true">
+    <Position X="66.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAQCAAgAAEAAAAAAAigAgAAAAAIABAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\AnimationTriggers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UI.Button" Collapsed="true">
+    <Position X="41.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgIAAAAAAAAAAAAAAAAAAgIAQAAAAAAgAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Button.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UnityEngine.UI.CanvasUpdateRegistry" Collapsed="true">
+    <Position X="70.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEISAAAACEJBgCAACgEAAFIAAABAAAEAAgAQAAAEAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\CanvasUpdateRegistry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UI.ClipperRegistry" Collapsed="true">
+    <Position X="72" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAgAAAAAAAABBAAAAAAAAAAAIEAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Culling\ClipperRegistry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UI.Clipping" Collapsed="true">
+    <Position X="73.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Culling\Clipping.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UI.RectangularVertexClipper" Collapsed="true">
+    <Position X="70.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Culling\RectangularVertexClipper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UI.DefaultControls" Collapsed="true">
+    <Position X="75.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQACAAAQgEIAKAAAAAEYCAABAAAAUABAICAAAEkACSQ=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\DefaultControls.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UI.Dropdown" Collapsed="true">
+    <Position X="44" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QMDECGEAUgIAUBBAEQEgCADAgEQEIaAACBAhCIIAAEA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Dropdown.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UnityEngine.UI.FontData" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="70.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAKAACAA4EQAIAACCAIAUAEhACBKAAQAEAAAAAAEIgQ=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\FontData.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="UnityEngine.UI.FontUpdateTracker" Collapsed="true">
+    <Position X="72" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIACA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\FontUpdateTracker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UI.Graphic" Collapsed="true">
+    <Position X="30.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AHEEhAAUrAHBBDALEIGHIAAKElQGIACIEGQW4ghiCQA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Graphic.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UnityEngine.UI.GraphicRaycaster" Collapsed="true">
+    <Position X="8" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAEACAAAAABIAAAQAAIgKAgAAAAAAAAAAAgBAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\GraphicRaycaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UI.GraphicRebuildTracker" Collapsed="true">
+    <Position X="73.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAKAAAAAAAAAAAAAAEAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\GraphicRebuildTracker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UI.GraphicRegistry" Collapsed="true">
+    <Position X="75.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAUAAAAAAAgAgACAAAABAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\GraphicRegistry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UI.Image" Collapsed="true">
+    <Position X="30.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QEAyYAAAAERwSIIAAqEBeFAkERBHMRAAQAQFAAtIBBE=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Image.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UnityEngine.UI.InputField" Collapsed="true">
+    <Position X="46" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>Frk94Xam3m7p6xBiQanhdVCE0psD9bg6ymlp1jvS7VQ=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\InputField.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UnityEngine.UI.AspectRatioFitter" Collapsed="true">
+    <Position X="10.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEEAoAAAIAABAAIAAEgAAAAAAAQAACIAgQAAAAAKAQ=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Layout\AspectRatioFitter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UnityEngine.UI.CanvasScaler" Collapsed="true">
+    <Position X="17" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EIQABAFAKAQAAAAAQIGJACAZhIAACQIIIUCEAQAADAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Layout\CanvasScaler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UI.ContentSizeFitter" Collapsed="true">
+    <Position X="35" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAIAAAJAABAAICAEABAAAAAAAAAAIAAQAAAgACBQ=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Layout\ContentSizeFitter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UnityEngine.UI.GridLayoutGroup" Collapsed="true">
+    <Position X="19.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAICAQAAABCEAQAAAAAAAJAAAAAZABAhBAEQ=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Layout\GridLayoutGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UI.HorizontalLayoutGroup" Collapsed="true">
+    <Position X="21.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAACAAAAAAAAAAAAAAAAAAAAgAAAQ=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Layout\HorizontalLayoutGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UI.HorizontalOrVerticalLayoutGroup" Collapsed="true">
+    <Position X="22.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kABAAAAAAgAABAAAAAAAgAAAAggAAABAAACABgEAAEA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Layout\HorizontalOrVerticalLayoutGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UI.LayoutElement" Collapsed="true">
+    <Position X="12.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEEQABCAAAAkDAABADEFCIAAAAAAABAIAAAhAAgADAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Layout\LayoutElement.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UnityEngine.UI.LayoutGroup" Collapsed="true">
+    <Position X="21.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAUAIAAAaAgTEAYECEFAwQgAQGAQBAoQAQBQAgGDCQ=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Layout\LayoutGroup.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UnityEngine.UI.LayoutRebuilder" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="68.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAACAAQAAACBQAUkAAABIAAEAAEAIAAGCAIBABAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Layout\LayoutRebuilder.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="UnityEngine.UI.LayoutUtility" Collapsed="true">
+    <Position X="70.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAhAAAAAAABAAAAAAABACgAAAEAAIAAAEAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Layout\LayoutUtility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UI.VerticalLayoutGroup" Collapsed="true">
+    <Position X="23.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAACAAAAAAAAAAAAAAAAAAAAgAAAQ=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Layout\VerticalLayoutGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UI.Mask" Collapsed="true">
+    <Position X="59.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAEAAAEEAAQAgIAABEQAAAAAAAAAAQIQABAAAAACAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Mask.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UnityEngine.UI.MaskableGraphic" Collapsed="true">
+    <Position X="30.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAVAAABBABgABAIESQAAAQRAQAAQIIIACAAAACAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\MaskableGraphic.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UnityEngine.UI.MaskUtilities" Collapsed="true">
+    <Position X="73.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAABAAAAAAAAAAAQAAABCEAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\MaskUtilities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UI.Misc" Collapsed="true">
+    <Position X="75.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Misc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UI.RawImage" Collapsed="true">
+    <Position X="28.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAABgAgAAAIAAIAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\RawImage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UI.RectMask2D" Collapsed="true">
+    <Position X="26" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAMAAAEAACRBAABAAUAAAACAAAAAAAIAAACAhAIDAE=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\RectMask2D.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UnityEngine.UI.Scrollbar" Collapsed="true">
+    <Position X="50.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABSBoIAABAAIJAAIAIFAACCREAZA4CYIAmCBAgYACAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Scrollbar.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UnityEngine.UI.ScrollRect" Collapsed="true">
+    <Position X="37.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CZOWAMIDKN56HECIlD/BMACyNgQCCb4aAHQLhmiATgQ=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\ScrollRect.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UnityEngine.UI.Selectable" Collapsed="true">
+    <Position X="48.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAaAAQAoFAAMBECAgBEEgACQESRgAiyNwEBQQ4GQLlg=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Selectable.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UnityEngine.UI.SetPropertyUtility" Collapsed="true">
+    <Position X="73.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\SetPropertyUtility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UI.Slider" Collapsed="true">
+    <Position X="53" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABQBhIAADAAIJABIAAFMACCQECZIYCYIAnCBAiAADIE=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Slider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UnityEngine.UI.StencilMaterial" Collapsed="true">
+    <Position X="75.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAABAAAAABAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\StencilMaterial.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UI.Text" Collapsed="true">
+    <Position X="32.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAKQkAAAAABgDiECCqMDQAAgQgEcABAIEAARCAgkDAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Text.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UnityEngine.UI.Toggle" Collapsed="true">
+    <Position X="48.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBgAEAAAEiIABABAEAEFAAAAEBAAAAAIACABAAAgCAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Toggle.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UnityEngine.UI.ToggleGroup" Collapsed="true">
+    <Position X="14.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABIIAAAAAAAAAAACAEAAAAAAgIAAAAAABAAAIAAQAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\ToggleGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UI.ListPool&lt;T&gt;" Collapsed="true">
+    <Position X="72" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAgAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Utility\ListPool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UI.ObjectPool&lt;T&gt;" Collapsed="true">
+    <Position X="66.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAYAAEAAAAJAAAAAAAAAAAAAAAAAAAAAABABAAg=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Utility\ObjectPool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UI.ReflectionMethodsCache" Collapsed="true">
+    <Position X="72" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAACAAAQAAACAACAAEAIAAEAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Utility\ReflectionMethodsCache.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UI.VertexHelper" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="68.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAABBAAACAACAEIEAAQAAAgAACAIIAAAkAgAEBIBAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Utility\VertexHelper.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="UnityEngine.UI.BaseVertexEffect" Collapsed="true">
+    <Position X="68.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\VertexModifiers\BaseMeshEffect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UI.BaseMeshEffect" Collapsed="true">
+    <Position X="63" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAEAAAAAAAABEEAAAAAAAAAAAIAAAAAAAACAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\VertexModifiers\BaseMeshEffect.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UnityEngine.UI.Outline" Collapsed="true">
+    <Position X="64.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\VertexModifiers\Outline.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UI.PositionAsUV1" Collapsed="true">
+    <Position X="62" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\VertexModifiers\PositionAsUV1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UI.Shadow" Collapsed="true">
+    <Position X="64.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAICAAACQBAAgAAAAQEAAAAACAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\VertexModifiers\Shadow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UI.Collections.IndexedSet&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="66.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEIAAEAAAAAAABAQDAAQJAQABAAAAAAEKAAAAABQIAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\SpecializedCollections\IndexedSet.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Struct Name="UnityEngine.EventSystems.RaycastResult" Collapsed="true">
+    <Position X="73.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAEAACAAAAACAAEAAAAAAFAAEAAgAAAAgAAIABBAAg=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\RaycastResult.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="UnityEngine.UI.CoroutineTween.ColorTween" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="68.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgBIwAAAAAQAAAIAIIAAAAAQAAYAAAAAAAEEgAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Animation\CoroutineTween.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="UnityEngine.UI.CoroutineTween.FloatTween" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="70.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAABIwAAAAAAQAAIEAIAAgAAAAAYAAAAAAAAEgAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Animation\CoroutineTween.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="UnityEngine.UI.ColorBlock" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="66.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAIAAAQAAgAAAIQgAAgEAAIAAAAZAAEAAAiA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\ColorBlock.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="UnityEngine.UI.Navigation" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="72" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAIAAAAAQAAIACAgAAAAAAAEAAAAAAgAAAAgAAJAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Navigation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="UnityEngine.UI.SpriteState" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="75.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAACAAAgAYAAAAAAAAACAAAAAAAAAABAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\SpriteState.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Interface Name="UnityEngine.EventSystems.IEventSystemHandler" Collapsed="true">
+    <Position X="20.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\EventInterfaces.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnityEngine.EventSystems.IPointerEnterHandler" Collapsed="true">
+    <Position X="18" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\EventInterfaces.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnityEngine.EventSystems.IPointerExitHandler" Collapsed="true">
+    <Position X="22.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\EventInterfaces.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnityEngine.EventSystems.IPointerDownHandler" Collapsed="true">
+    <Position X="27" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\EventInterfaces.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnityEngine.EventSystems.IPointerUpHandler" Collapsed="true">
+    <Position X="31.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\EventInterfaces.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnityEngine.EventSystems.IPointerClickHandler" Collapsed="true">
+    <Position X="36" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\EventInterfaces.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnityEngine.EventSystems.IBeginDragHandler" Collapsed="true">
+    <Position X="2.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\EventInterfaces.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnityEngine.EventSystems.IInitializePotentialDragHandler" Collapsed="true">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\EventInterfaces.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnityEngine.EventSystems.IDragHandler" Collapsed="true">
+    <Position X="9" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\EventInterfaces.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnityEngine.EventSystems.IEndDragHandler" Collapsed="true">
+    <Position X="11.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\EventInterfaces.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnityEngine.EventSystems.IDropHandler" Collapsed="true">
+    <Position X="13.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\EventInterfaces.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnityEngine.EventSystems.IScrollHandler" Collapsed="true">
+    <Position X="15.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\EventInterfaces.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnityEngine.EventSystems.IUpdateSelectedHandler" Collapsed="true">
+    <Position X="20.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\EventInterfaces.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnityEngine.EventSystems.ISelectHandler" Collapsed="true">
+    <Position X="24.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\EventInterfaces.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnityEngine.EventSystems.IDeselectHandler" Collapsed="true">
+    <Position X="29.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\EventInterfaces.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnityEngine.EventSystems.IMoveHandler" Collapsed="true">
+    <Position X="33.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\EventInterfaces.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnityEngine.EventSystems.ISubmitHandler" Collapsed="true">
+    <Position X="38.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\EventInterfaces.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnityEngine.EventSystems.ICancelHandler" Collapsed="true">
+    <Position X="4.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\EventInterfaces.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnityEngine.UI.CoroutineTween.ITweenValue" Collapsed="true">
+    <Position X="73.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABIAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Animation\CoroutineTween.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnityEngine.UI.ICanvasElement" Collapsed="true">
+    <Position X="66.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAQAAAAAAAAEAAEAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\CanvasUpdateRegistry.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnityEngine.UI.IClipper" Collapsed="true">
+    <Position X="70.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Culling\IClipRegion.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnityEngine.UI.IClippable" Collapsed="true">
+    <Position X="68.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAUAAAAAAAAAAAAAAAAAAAAAAAAAAIgAAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Culling\IClipRegion.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnityEngine.UI.IGraphicEnabledDisabled" Collapsed="true">
+    <Position X="72" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\IGraphicEnabledDisabled.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnityEngine.UI.IMask" Collapsed="true">
+    <Position X="66.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\IMask.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnityEngine.UI.IMaskable" Collapsed="true">
+    <Position X="68.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\IMaskable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnityEngine.UI.ILayoutElement" Collapsed="true">
+    <Position X="73.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAgCAAAACABAAAAAAAAABAAAAABAAgABAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Layout\ILayoutElement.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnityEngine.UI.ILayoutController" Collapsed="true">
+    <Position X="9.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Layout\ILayoutElement.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnityEngine.UI.ILayoutGroup" Collapsed="true">
+    <Position X="8.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Layout\ILayoutElement.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnityEngine.UI.ILayoutSelfController" Collapsed="true">
+    <Position X="10.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Layout\ILayoutElement.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnityEngine.UI.ILayoutIgnorer" Collapsed="true">
+    <Position X="75.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\Layout\ILayoutElement.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnityEngine.UI.IMaterialModifier" Collapsed="true">
+    <Position X="70.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\MaterialModifiers\IMaterialModifier.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnityEngine.UI.IVertexModifier" Collapsed="true">
+    <Position X="75.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\VertexModifiers\IMeshModifier.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnityEngine.UI.IMeshModifier" Collapsed="true">
+    <Position X="72" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\VertexModifiers\IMeshModifier.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="UnityEngine.EventSystems.EventHandle" Collapsed="true">
+    <Position X="68.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\EventHandle.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="UnityEngine.EventSystems.EventTriggerType" Collapsed="true">
+    <Position X="70.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAACASIIQAAAAAQAAAAAAAAABAAAAAQBgQQQAAAA=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\EventTriggerType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="UnityEngine.EventSystems.MoveDirection" Collapsed="true">
+    <Position X="72" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAACACAAAEAAAI=</HashCode>
+      <FileName>Assets\UnityEngine.UI\EventSystem\MoveDirection.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="UnityEngine.UI.CanvasUpdate" Collapsed="true">
+    <Position X="66.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAIAAAAAAAAAAAAAAAAAgAAAAAAAEAIAAAAAAAAAAg=</HashCode>
+      <FileName>Assets\UnityEngine.UI\UI\Core\CanvasUpdateRegistry.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>
